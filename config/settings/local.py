@@ -13,6 +13,8 @@ SITE_NAME = getenv("SITE_NAME")
 SECRET_KEY = getenv("DJANGO_SECRET_KEY","1-_JjrNSxQuq_69qPWVCUtrIJ9pU87r_LhPIFN7T50izBugegqI")
 #'django-insecure-htrr7ev0iw=_t3)zz-oleek62x53^ie@*yf_jsilsl6tyv0x+@'
 
+CSRF_TRUSTED_ORIGINS = ["http://localhost:8080"]
+
 ALLOWED_HOSTS = ["localhost","127.0.0.1", "0.0.0.0"]
 
 ADMIN_URL = getenv("DJANGO_ADMIN_URL")
